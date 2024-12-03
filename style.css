@@ -1,10 +1,48 @@
-main{
+.main{
     min-height: 100vh;
     font-size: 5rem;
     padding: 10px;
+    text-align: center;
     display: grid;
     background-color: cyan;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    
+    grid-gap: 10px;
+
+}
+div{
+    background-color: lightgreen;
+}
+
+#dos{
+    display: grid;
+    grid-template-areas:
+    "h h h"
+    "m m a"
+    "n n b"
+    "n n b"
+    "f f f";
+background-color: lightcoral;
+height: 200px;
+}
+.grid-1{
+    grid-area:h;
+}
+.grid-2{
+    grid-area:m;
+}
+.grid-3{
+    grid-area:a;
+}
+.grid-4{
+    grid-area:n;
+}
+.grid-5{
+    grid-area:b;
+}
+.grid-6{
+    grid-area:f;
+}
+#dos div{
+    background-color: blueviolet;
 }
